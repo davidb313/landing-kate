@@ -1,34 +1,196 @@
-<div class='max-w-5xl backdrop-blur-sm rounded-lg dark:bg-white/50'>
-  <div class='p-10'>
-    <a href='#'>
-      <h1 class='text-left text-5xl text-white font-medium'>Pasadía</h1>
-    </a>
-    <p class='text-left pb-2 pt-4 text-pretty text-black dark:text-black'>
-      Ofrecemos la posibilidad para que las personas mayores puedan tener un
-      tiempo de entretenimiento durante el día realizando diferentes actividades
-      y haciendo uso de los espacios y herramientas que ofrece La Casa.
-    </p>
-    <p class='text-left pb-4 text-pretty text-black dark:text-black'>
-      Por eso brindamos la posibilidad de pasar el día en La Casa participando
-      de las actividades terapéuticas y lúdicas; generando un entorno de
-      bienestar.
-    </p>
-    <p class='text-left pb-4 text-pretty text-black dark:text-black'>
-      Este programa se puede disfrutar de lunes a viernes de 10:00 a.m. a 5:00
-      p.m.
-    </p>
-
-    <div class='pt-6 flex justify-between flex-wrap'>
-      <div>
-        <h3 class='text-xl pb-3 text-left text-white font-medium'>
-          Nuestro programa incluye:
-        </h3>
-        <ul class='list-disc text-left pl-3'>
-          <li>Almuerzo y refrigerio a.m. y p.m.</li>
-          <li>Emermédica a partir de 3 días a la semana</li>
-          <li>Acompañamiento de auxiliares de enfermería durante el día</li>
-        </ul>
-      </div>
+<div
+  class='w-2/4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 backdrop-blur-lg border-none'
+>
+  <ul
+    class='flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800'
+    id='defaultTab'
+    data-tabs-toggle='#defaultTabContent'
+    role='tablist'
+  >
+    <li class='me-2'>
+      <button
+        id='about-tab'
+        data-tabs-target='#about'
+        type='button'
+        role='tab'
+        aria-controls='about'
+        aria-selected='true'
+        class='inline-block p-4 text-blue-600 rounded-ss-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-blue-500'
+        >Acerca del programa</button
+      >
+    </li>
+    <li class='me-2'>
+      <button
+        id='services-tab'
+        data-tabs-target='#services'
+        type='button'
+        role='tab'
+        aria-controls='services'
+        aria-selected='false'
+        class='inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300'
+        >¿Qué incluye?</button
+      >
+    </li>
+    <li class='me-2'>
+      <button
+        id='statistics-tab'
+        data-tabs-target='#statistics'
+        type='button'
+        role='tab'
+        aria-controls='statistics'
+        aria-selected='false'
+        class='inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300'
+        >Precio</button
+      >
+    </li>
+  </ul>
+  <div id='defaultTabContent'>
+    <div
+      class='p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800'
+      id='about'
+      role='tabpanel'
+      aria-labelledby='about-tab'
+    >
+      <h2
+        class='text-left mb-3 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white'
+      >
+        Pasadía
+      </h2>
+      <p class='text-left mb-3 text-gray-500 dark:text-gray-400'>
+        Ofrecemos la posibilidad para que las personas mayores puedan tener un
+        tiempo de entretenimiento durante el día realizando diferentes
+        actividades y haciendo uso de los espacios y herramientas que ofrece La
+        Casa.
+        <br /><br />
+        Por eso brindamos la posibilidad de pasar el día en La Casa participando
+        de las actividades terapéuticas y lúdicas; generando un entorno de bienestar.
+        <br /><br />
+        Este programa se puede disfrutar de lunes a viernes de 10:00 a.m. a 5:00
+        p.m.
+      </p>
+    </div>
+    <div
+      class='hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800'
+      id='services'
+      role='tabpanel'
+      aria-labelledby='services-tab'
+    >
+      <h2
+        class='text-left mb-5 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white'
+      >
+        El programa de Pasadía incluye:
+      </h2>
+      <!-- List -->
+      <ul role='list' class='space-y-4 text-gray-500 dark:text-gray-400'>
+        <li class='flex space-x-2 rtl:space-x-reverse items-center'>
+          <svg
+            class='flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500'
+            aria-hidden='true'
+            xmlns='http://www.w3.org/2000/svg'
+            fill='currentColor'
+            viewBox='0 0 20 20'
+          >
+            <path
+              d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z'
+            ></path>
+          </svg>
+          <span class='leading-tight'>Almuerzo y refrigerio a.m. y p.m.</span>
+        </li>
+        <li class='flex space-x-2 rtl:space-x-reverse items-center'>
+          <svg
+            class='flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500'
+            aria-hidden='true'
+            xmlns='http://www.w3.org/2000/svg'
+            fill='currentColor'
+            viewBox='0 0 20 20'
+          >
+            <path
+              d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z'
+            ></path>
+          </svg>
+          <span class='leading-tight'
+            >Emermédica a partir de 3 días a la semana</span
+          >
+        </li>
+        <li class='flex space-x-2 rtl:space-x-reverse items-center'>
+          <svg
+            class='flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500'
+            aria-hidden='true'
+            xmlns='http://www.w3.org/2000/svg'
+            fill='currentColor'
+            viewBox='0 0 20 20'
+          >
+            <path
+              d='M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z'
+            ></path>
+          </svg>
+          <span class='leading-tight'
+            >Acompañamiento de auxiliares de enfermería durante el día</span
+          >
+        </li>
+      </ul>
+    </div>
+    <div
+      class='hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800'
+      id='statistics'
+      role='tabpanel'
+      aria-labelledby='statistics-tab'
+    >
+      <dl
+        class='grid max-w-screen-xl grid-cols-1 gap-8 p-4 mx-auto text-gray-900 sm:grid-cols-1 xl:grid-cols-1 dark:text-white sm:p-8'
+      >
+        <div class='flex flex-col'>
+          <dt class='mb-2 text-3xl font-extrabold'>COP $120.000</dt>
+          <dd class='text-gray-500 dark:text-gray-400'>
+            Este valor incluye el IVA y todas las actividades indicadas
+            anteriormente para un (1) día, iniciando desde las 10:00am hasta las
+            5:00pm.
+          </dd>
+        </div>
+      </dl>
     </div>
   </div>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const tabs = document.querySelectorAll("[data-tabs-target]");
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const target = document.querySelector(tab?.dataset?.tabsTarget);
+        const allTabs = document.querySelectorAll("[data-tabs-target]");
+        const allTabContents = document.querySelectorAll('[role="tabpanel"]');
+
+        allTabs.forEach((tab) => {
+          tab.setAttribute("aria-selected", "false");
+        });
+        tabs.forEach((tab) => {
+          tab.classList.remove(
+            "text-blue-600",
+            "hover:text-gray-600",
+            "bg-gray-100",
+            "dark:bg-gray-800",
+            "dark:hover:bg-gray-700",
+            "dark:text-blue-500",
+            "dark:hover:text-gray-300"
+          );
+        });
+        tab.setAttribute("aria-selected", "true");
+        tab.classList.add(
+          "text-blue-600",
+          "hover:text-gray-600",
+          "bg-gray-100",
+          "dark:bg-gray-800",
+          "dark:hover:bg-gray-700",
+          "dark:text-blue-500",
+          "dark:hover:text-gray-300"
+        );
+
+        allTabContents.forEach((content) => {
+          content.classList.add("hidden");
+        });
+        target.classList.remove("hidden");
+      });
+    });
+  });
+</script>
