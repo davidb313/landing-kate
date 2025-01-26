@@ -1,48 +1,193 @@
-<div class='max-w-5xl backdrop-blur-sm rounded-lg dark:bg-white/50'>
-  <div class='p-10'>
-    <a href='#'>
-      <h1 class='text-left text-5xl text-white font-medium'>Hogar temporal</h1>
-    </a>
-    <p class='text-left pb-4 pt-4 text-pretty text-black dark:text-black'>
-      Sabemos que una persona mayor puede pasar por un proceso post quirúrgico,
-      de recuperación de algún tratamiento médico o tener un periodo de
-      vacaciones que amerita el cuidado de profesionales. Por eso, en nuestro
-      hogar temporal brindamos la posibilidad de acceder a una habitación dotada
-      con elementos básicos que ofrece un confort necesario para una estadía
-      corta (mínimo 15 días hasta 60 días).
-    </p>
-
-    <div class='pt-6 flex justify-between flex-wrap'>
-      <div>
-        <h3 class='text-xl pb-3 text-left text-white font-medium'>
-          Nuestro programa incluye:
-        </h3>
-        <ul class='list-disc text-left pl-3'>
-          <li>Tres comidas principales y 2 a 3 refrigerios</li>
-          <li>Aseo y mantenimiento a la habitación</li>
-          <li>Lavado y planchado de ropa</li>
-          <li>Salidas</li>
-          <li>Transporte donde un familiar los sábados (Cali)</li>
-          <li>Asistencia en comunicación virtual con familiares</li>
-          <li>Nutricionista para control de peso y dieta</li>
-          <li>Emermédica</li>
-        </ul>
-      </div>
-
-      <div class='max-w-md'>
-        <h3 class='text-xl pb-3 text-left text-white font-medium'>
-          Además, contará con acompañamiento de auxiliares de enfermería las 24
-          h para:
-        </h3>
-        <ul class='list-disc text-left pl-3'>
-          <li>Suministro de medicamentos</li>
-          <li>Toma de signos vitales</li>
-          <li>Atención en las actividades de la vida diaria</li>
-          <li>Asistencias puntuales</li>
-          <li>Rondas en las noches para velar el sueño</li>
-          <li>Atención de emergencia</li>
-        </ul>
-      </div>
+<div
+  class="w-3/4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 backdrop-blur-lg border-none"
+>
+  <ul
+    class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800"
+    id="defaultTabTemporal"
+    data-tabs-toggle="#defaultTabContentTemporal"
+    role="tablist"
+  >
+    <li class="me-2">
+      <button
+        id="about-tab-temporal"
+        data-tabs-target="#about-temporal"
+        type="button"
+        role="tab"
+        aria-controls="about-pasatemporaldia"
+        aria-selected="true"
+        class="inline-block p-4 text-blue-600 rounded-ss-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-blue-500"
+        >Acerca del programa</button
+      >
+    </li>
+    <li class="me-2">
+      <button
+        id="services-tab-temporal"
+        data-tabs-target="#services-temporal"
+        type="button"
+        role="tab"
+        aria-controls="services-temporal"
+        aria-selected="false"
+        class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+        >¿Qué incluye?</button
+      >
+    </li>
+    <li class="me-2">
+      <button
+        id="statistics-tab-temporal"
+        data-tabs-target="#statistics-temporal"
+        type="button"
+        role="tab"
+        aria-controls="statistics-temporal"
+        aria-selected="false"
+        class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+        >Precio</button
+      >
+    </li>
+  </ul>
+  <div id="defaultTabContentTemporal">
+    <div
+      class="p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+      id="about-temporal"
+      role="tabpanel-temporal"
+      aria-labelledby="about-tab-temporal"
+    >
+      <h2
+        class="text-left mb-3 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+      >
+        Hogar temporal
+      </h2>
+      <p class="text-left mb-3 text-gray-500 dark:text-gray-400">
+        Entendemos que una persona mayor puede necesitar cuidados especializados
+        tras una cirugía, durante la recuperación de un tratamiento médico o
+        incluso en un periodo de vacaciones. Por eso, en el Hogar Temporal
+        ofrecemos habitaciones completamente equipadas, diseñadas para
+        garantizar el confort y bienestar en estadías cortas de al menos 30
+        días, con todos los elementos básicos necesarios para una experiencia
+        cómoda y segura.
+      </p>
+    </div>
+    <div
+      class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+      id="services-temporal"
+      role="tabpanel-temporal"
+      aria-labelledby="services-tab-temporal"
+    >
+      <h2
+        class="text-left mb-5 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+      >
+        El programa incluye:
+      </h2>
+      <!-- List -->
+      <ul role="list" class="space-y-4 text-gray-500 dark:text-gray-400">
+        <li class="flex space-x-2 rtl:space-x-reverse items-center">
+          <svg
+            class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+            ></path>
+          </svg>
+          <span class="leading-tight"
+            >Tres comidas principales y 2 a 3 refrigerios
+          </span>
+        </li>
+        <li class="flex space-x-2 rtl:space-x-reverse items-center">
+          <svg
+            class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+            ></path>
+          </svg>
+          <span class="leading-tight"
+            >Aseo y mantenimiento a la habitación
+          </span>
+        </li>
+        <li class="flex space-x-2 rtl:space-x-reverse items-center">
+          <svg
+            class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+            ></path>
+          </svg>
+          <span class="leading-tight"
+            >Asistencia en comunicación virtual con familiares
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+      id="statistics-temporal"
+      role="tabpanel-temporal"
+      aria-labelledby="statistics-tab-temporal"
+    >
+      <dl
+        class="grid max-w-screen-xl grid-cols-1 gap-8 p-4 mx-auto text-gray-900 sm:grid-cols-1 xl:grid-cols-1 dark:text-white sm:p-8"
+      >
+        <div class="flex flex-col">
+          <dt class="mb-2 text-3xl font-extrabold">COP $120.000 /día</dt>
+          <dd class="text-gray-500 dark:text-gray-400">
+            Este valor incluye el IVA y todas las actividades indicadas
+            anteriormente para un (1) día, iniciando desde las 9:00am hasta las
+            5:00pm.
+          </dd>
+        </div>
+      </dl>
     </div>
   </div>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const tabsContainer = document.getElementById("defaultTabTemporal");
+    if (!tabsContainer) return;
+
+    const tabs = tabsContainer.querySelectorAll("[data-tabs-target]");
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const target = document.querySelector(tab?.dataset?.tabsTarget);
+        const allTabs = tabsContainer.querySelectorAll("[data-tabs-target]");
+        const allTabContents = document.querySelectorAll(
+          '[role="tabpanel-temporal"]'
+        );
+
+        allTabs.forEach((t) => {
+          t.setAttribute("aria-selected", "false");
+          t.classList.remove(
+            "text-blue-600",
+            "bg-gray-100",
+            "dark:text-blue-500"
+          );
+        });
+
+        tab.setAttribute("aria-selected", "true");
+        tab.classList.add("text-blue-600", "bg-gray-100", "dark:text-blue-500");
+
+        allTabContents.forEach((content) => {
+          if (content.id === target.id) {
+            content.classList.remove("hidden");
+          } else {
+            content.classList.add("hidden");
+          }
+        });
+      });
+    });
+
+    // Trigger click on first tab to show initial content
+    tabs[0]?.click();
+  });
+</script>

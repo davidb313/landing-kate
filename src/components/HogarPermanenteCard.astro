@@ -1,49 +1,189 @@
-<div class='max-w-5xl backdrop-blur-sm rounded-lg dark:bg-white/50'>
-  <div class='p-10'>
-    <a href='#'>
-      <h1 class='text-left text-5xl text-white font-medium'>
+<div
+  class="w-3/4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 backdrop-blur-lg border-none"
+>
+  <ul
+    class="flex flex-wrap text-sm font-medium text-center text-gray-500 border-b border-gray-200 rounded-t-lg bg-gray-50 dark:border-gray-700 dark:text-gray-400 dark:bg-gray-800"
+    id="defaultTabPermanente"
+    data-tabs-toggle="#defaultTabContentPermanente"
+    role="tablist"
+  >
+    <li class="me-2">
+      <button
+        id="about-tab-permanente"
+        data-tabs-target="#about-permanente"
+        type="button"
+        role="tab"
+        aria-controls="about-permanente"
+        aria-selected="true"
+        class="inline-block p-4 text-blue-600 rounded-ss-lg hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-blue-500"
+        >Acerca del programa</button
+      >
+    </li>
+    <li class="me-2">
+      <button
+        id="services-tab-permanente"
+        data-tabs-target="#services-permanente"
+        type="button"
+        role="tab"
+        aria-controls="services-permanente"
+        aria-selected="false"
+        class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+        >¿Qué incluye?</button
+      >
+    </li>
+    <li class="me-2">
+      <button
+        id="statistics-tab-permanente"
+        data-tabs-target="#statistics-permanente"
+        type="button"
+        role="tab"
+        aria-controls="statistics-permanente"
+        aria-selected="false"
+        class="inline-block p-4 hover:text-gray-600 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-gray-300"
+        >Precio</button
+      >
+    </li>
+  </ul>
+  <div id="defaultTabContentPermanente">
+    <div
+      class="p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+      id="about-permanente"
+      role="tabpanel-permanente"
+      aria-labelledby="about-tab-permanente"
+    >
+      <h2
+        class="text-left mb-3 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+      >
         Hogar permanente
-      </h1>
-    </a>
-    <p class='text-left pb-4 pt-4 text-pretty text-black dark:text-black'>
-      Hemos diseñado un espacio pensado para responder a las necesidades y
-      cuidados requeridos por las personas mayores. Además, buscamos mantener el
-      vínculo y el sentido de pertenencia con la familia brindando la
-      posibilidad de amoblar la habitación con elementos que tienen algún tipo
-      de valor sentimental.
-    </p>
-
-    <div class='pt-6 flex justify-between flex-wrap'>
-      <div>
-        <h3 class='text-xl pb-3 text-left text-white font-medium'>
-          Nuestro programa incluye:
-        </h3>
-        <ul class='list-disc text-left pl-3'>
-          <li>Tres comidas principales y 2 a 3 refrigerios</li>
-          <li>Aseo y mantenimiento a la habitación</li>
-          <li>Lavado y planchado de ropa</li>
-          <li>Salidas</li>
-          <li>Transporte donde un familiar los sábados (Cali)</li>
-          <li>Asistencia en comunicación virtual con familiares</li>
-          <li>Nutricionista para control de peso y dieta</li>
-          <li>Emermédica</li>
-        </ul>
-      </div>
-
-      <div class='max-w-md'>
-        <h3 class='text-xl pb-3 text-left text-white font-medium'>
-          Además, contará con acompañamiento de auxiliares de enfermería las 24
-          h para:
-        </h3>
-        <ul class='list-disc text-left pl-3'>
-          <li>Suministro de medicamentos</li>
-          <li>Toma de signos vitales</li>
-          <li>Atención en las actividades de la vida diaria</li>
-          <li>Asistencias puntuales</li>
-          <li>Rondas en las noches para velar el sueño</li>
-          <li>Atención de emergencia</li>
-        </ul>
-      </div>
+      </h2>
+      <p class="text-left mb-3 text-gray-500 dark:text-gray-400">
+        Hemos creado un espacio acogedor y cuidadosamente diseñado para atender
+        las necesidades y cuidados de las personas mayores. Nuestro objetivo es
+        fortalecer el vínculo familiar y preservar el sentido de pertenencia,
+        ofreciendo la oportunidad de personalizar la habitación con muebles y
+        objetos que tengan un significado especial y sentimental.
+      </p>
+    </div>
+    <div
+      class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+      id="services-permanente"
+      role="tabpanel-permanente"
+      aria-labelledby="services-tab-permanente"
+    >
+      <h2
+        class="text-left mb-5 text-2xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+      >
+        El programa incluye:
+      </h2>
+      <!-- List -->
+      <ul role="list" class="space-y-4 text-gray-500 dark:text-gray-400">
+        <li class="flex space-x-2 rtl:space-x-reverse items-center">
+          <svg
+            class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+            ></path>
+          </svg>
+          <span class="leading-tight"
+            >Tres comidas principales y 2 a 3 refrigerios
+          </span>
+        </li>
+        <li class="flex space-x-2 rtl:space-x-reverse items-center">
+          <svg
+            class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+            ></path>
+          </svg>
+          <span class="leading-tight"
+            >Aseo y mantenimiento a la habitación
+          </span>
+        </li>
+        <li class="flex space-x-2 rtl:space-x-reverse items-center">
+          <svg
+            class="flex-shrink-0 w-3.5 h-3.5 text-blue-600 dark:text-blue-500"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+          >
+            <path
+              d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+            ></path>
+          </svg>
+          <span class="leading-tight"
+            >Nutricionista para control de peso y dieta
+          </span>
+        </li>
+      </ul>
+    </div>
+    <div
+      class="hidden p-4 bg-white rounded-lg md:p-8 dark:bg-gray-800"
+      id="statistics-permanente"
+      role="tabpanel-permanente"
+      aria-labelledby="statistics-tab-permanente"
+    >
+      <dl
+        class="grid max-w-screen-xl grid-cols-1 gap-8 p-4 mx-auto text-gray-900 sm:grid-cols-1 xl:grid-cols-1 dark:text-white sm:p-8"
+      >
+        <div class="flex flex-col">
+          <dt class="mb-2 text-3xl font-extrabold">COP $1.200.000 /mes</dt>
+          <dd class="text-gray-500 dark:text-gray-400">
+            Este valor incluye el IVA.
+          </dd>
+        </div>
+      </dl>
     </div>
   </div>
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const tabsContainer = document.getElementById("defaultTabPermanente");
+    if (!tabsContainer) return;
+
+    const tabs = tabsContainer.querySelectorAll("[data-tabs-target]");
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const target = document.querySelector(tab?.dataset?.tabsTarget);
+        const allTabs = tabsContainer.querySelectorAll("[data-tabs-target]");
+        const allTabContents = document.querySelectorAll(
+          '[role="tabpanel-permanente"]'
+        );
+
+        allTabs.forEach((t) => {
+          t.setAttribute("aria-selected", "false");
+          t.classList.remove(
+            "text-blue-600",
+            "bg-gray-100",
+            "dark:text-blue-500"
+          );
+        });
+
+        tab.setAttribute("aria-selected", "true");
+        tab.classList.add("text-blue-600", "bg-gray-100", "dark:text-blue-500");
+
+        allTabContents.forEach((content) => {
+          if (content.id === target.id) {
+            content.classList.remove("hidden");
+          } else {
+            content.classList.add("hidden");
+          }
+        });
+      });
+    });
+
+    // Trigger click on first tab to show initial content
+    tabs[0]?.click();
+  });
+</script>

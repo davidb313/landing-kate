@@ -6,23 +6,27 @@ import Header from "../components/Header.astro";
 import HogarPermanenteServices from "../components/HogarPermanenteServices.astro";
 import HogarTemporalServices from "../components/HogarTemporalServices.astro";
 import HogarPasadiaServices from "../components/HogarPasadiaServices.astro";
+import Contactanos from "../components/Contactanos.astro";
 ---
 
-<Layout title='Te cuido - hogar de cuidado al adulto mayor'>
+<Layout title="Te cuido - hogar de cuidado al adulto mayor">
   <Header />
 
-  <main class='snap-y snap-mandatory relative w-full h-screen overflow-auto'>
-    <div class='snap-center'>
+  <main class="snap-y snap-mandatory relative w-full h-screen overflow-auto">
+    <div id="home" class="snap-center">
       <MainSection />
     </div>
-    <div class='snap-center'>
+    <div id="permanente" class="snap-center">
       <HogarPermanenteServices />
     </div>
-    <div class='snap-center'>
+    <div id="temporal" class="snap-center">
       <HogarTemporalServices />
     </div>
-    <div class='snap-center'>
+    <div id="pasadia" class="snap-center">
       <HogarPasadiaServices />
+    </div>
+    <div id="contactanos" class="snap-center">
+      <Contactanos />
     </div>
   </main>
 </Layout>
